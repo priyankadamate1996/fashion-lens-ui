@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fashion-lens-expo-e07b7f67c0b24bf69582d22b6fbe1556",
-    "slug": "fashion-lens-expo-e07b7f67c0b24bf69582d22b6fbe1556",
+    "name": "Fashion Lens",
+    "slug": "fashion-lens-ui",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,6 +20,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ]
   }
 }

@@ -1,0 +1,161 @@
+{
+  "planHash": "9c16db90796304d1a539acaececaf9f782cc992146a303d41a2d3e1ff05c1435",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-10-30T06:39:41.0632504Z",
+  "retryCount": 3,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 100401,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "typescript-no-emit",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "",
+        "durationMs": 9027
+      },
+      {
+        "name": "expo-lint",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E fashion-lens-expo-e07b7f67c0b24bf69582d22b6fbe1556@1.0.0 lint\r\n\u003E eslint .\r\n\r\n",
+        "durationMs": 7384
+      },
+      {
+        "name": "expo-web-export",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "Node.js (v20.19.4) is outdated and unsupported. Please update to a newer Node.js LTS version (required: \u003E=22.13.0)\r\nGo to: https://nodejs.org/en/download\r\n\r\nenv: load .env.local\r\nenv: export EXPO_PUBLIC_FIREBASE_API_KEY EXPO_PUBLIC_FIREBASE_APP_ID EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID EXPO_PUBLIC_FIREBASE_PROJECT_ID\r\nStarting Metro Bundler\r\n\r\nWeb Bundled 359ms index.ts (172 modules)\r\n\r\n\u203A web bundles (1):\r\n_expo/static/js/web/index-fcf27c893099f03506b6b232b2be4ad8.js (766KB)\r\n\r\n\u203A Files (3):\r\nfavicon.ico (15KB)\r\nindex.html (1.2KB)\r\nmetadata.json (49B)\r\n\r\nExported: dist\r\n",
+        "durationMs": 6770
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E fashion-lens-expo-e07b7f67c0b24bf69582d22b6fbe1556@1.0.0 test\r\n\u003E vitest run\r\n\r\n\r\n\u001B[1m\u001B[46m RUN \u001B[49m\u001B[22m \u001B[36mv3.2.7 \u001B[39m\u001B[90mC:/Users/priyanka.damate/FashionSearchApp/Frontend/fashion-lens-ui\u001B[39m\r\n\r\n \u001B[32m\u2713\u001B[39m tests/web-export.test.mjs \u001B[2m(\u001B[22m\u001B[2m1 test\u001B[22m\u001B[2m)\u001B[22m\u001B[32m 8\u001B[2mms\u001B[22m\u001B[39m\r\n\r\n\u001B[2m Test Files \u001B[22m \u001B[1m\u001B[32m1 passed\u001B[39m\u001B[22m\u001B[90m (1)\u001B[39m\r\n\u001B[2m      Tests \u001B[22m \u001B[1m\u001B[32m1 passed\u001B[39m\u001B[22m\u001B[90m (1)\u001B[39m\r\n\u001B[2m   Start at \u001B[22m 12:09:22\r\n\u001B[2m   Duration \u001B[22m 675ms\u001B[2m (transform 34ms, setup 0ms, collect 36ms, tests 8ms, environment 0ms, prepare 177ms)\u001B[22m\r\n\r\n",
+        "durationMs": 3366,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 1,
+          "testsPassed": 1,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "expo-web-starts",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!doctype html\u003E\n\u003Chtml lang=\u0022en\u0022\u003E\n  \u003Chead\u003E\n    \u003Cmeta charset=\u0022utf-8\u0022 /\u003E\n    \u003Cmeta httpEquiv=\u0022X-UA-Compatible\u0022 content=\u0022IE=edge\u0022 /\u003E\n    \u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1, shrink-to-fit=no\u0022 /\u003E\n    \u003Ctitle\u003EFashion Lens\u003C/title\u003E\n    \u003C!-- The \u0060react-native-web\u0060 recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element --\u003E\n    \u003Cstyle id=\u0022expo-reset\u0022\u003E\n      /* These styles make the body full-height */\n      html,\n      body {\n        height: 100%;\n      }\n      /* These styles disable body scrolling if you are using \u003CScrollView\u003E */\n      body {\n        overflow: hidden;\n      }\n      /* These styles make the root element full-height */\n      #root {\n        display: flex;\n        height: 100%;\n        flex: 1;\n      }\n    \u003C/style\u003E\n  \u003C/head\u003E\n\n  \u003Cbody\u003E\n    \u003C!-- Use static rendering with Expo Router to support running without JavaScript. --\u003E\n    \u003Cnoscript\u003E You need to enable JavaScript to run this app. \u003C/noscript\u003E\n    \u003C!-- The root element for your Expo app. --\u003E\n    \u003Cdiv id=\u0022root\u0022\u003E\u003C/div\u003E\n  \u003Cscript src=\u0022/index.ts.bundle?platform=web\u0026dev=true\u0026hot=false\u0026lazy=true\u0026transform.engine=hermes\u0026transform.routerRoot=app\u0026unstable_transformProfile=hermes-stable\u0022 defer\u003E\u003C/script\u003E\u003C/body\u003E\n\u003C/html\u003E\n\n--- server output ---\n\r\n\u003E fashion-lens-expo-e07b7f67c0b24bf69582d22b6fbe1556@1.0.0 web\r\n\u003E expo start --web --port 8081\r\n\r\nNode.js (v20.19.4) is outdated and unsupported. Please update to a newer Node.js LTS version (required: \u003E=22.13.0)\r\nGo to: https://nodejs.org/en/download\r\n\r\nenv: load .env.local\r\nenv: export EXPO_PUBLIC_FIREBASE_API_KEY EXPO_PUBLIC_FIREBASE_APP_ID EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID EXPO_PUBLIC_FIREBASE_PROJECT_ID\r\nStarting project at C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui\r\nStarting Metro Bundler\r\n\r\nWaiting on http://localhost:8081\r\n\r\nAn update for expo is available: 58.0.19 \u2192 ~58.0.21\r\n3 other packages may need updating. Run npx expo install --check for details.\r\nLogs for your project will appear below.\r\n",
+        "durationMs": 17316
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "ci"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "typescript-no-emit",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npx.CMD",
+        "args": [
+          "tsc",
+          "--noEmit"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "expo-lint",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "expo-web-export",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npx.CMD",
+        "args": [
+          "expo",
+          "export",
+          "--platform",
+          "web"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "expo-web-starts",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "web",
+          "--",
+          "--port",
+          "8081"
+        ],
+        "cwd": "C:\\Users\\priyanka.damate\\FashionSearchApp\\Frontend\\fashion-lens-ui",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
